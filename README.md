@@ -3,23 +3,32 @@ El sistema gestiona ruletas con endpoints para crear nuevas ruletas, abrirlas pa
 
 ## Tecnologías usadas
 Lenguaje: C#
+
 Framework: ASP.NET Core
+
 Base de Datos: SQL Server
+
 Sin uso de migraciones (consultas SQL directas)
+
 Gestor de dependencias: NuGet
 
 ## Endpoints Principales
 1. Creación de nuevas ruletas
    https://localhost:7113/api/reglas/crear
-2. Apertura de ruleta
+   
+3. Apertura de ruleta
    https://localhost:7113/api/reglas/abrir/{id}
-3. Realizar apuesta
+   
+5. Realizar apuesta
    https://localhost:7113/api/apuestas/apostar/{id}
+   
    Headers
+   
    Key usuarioId
-   Value
-   1
-4. Cierre de ruleta
+   
+   Value 1
+   
+7. Cierre de ruleta
    https://localhost:7113/api/resultados/cerrar/{id}
 
 ## Instrucciones de Uso 
@@ -31,18 +40,23 @@ cd RuletaApi
 2. Configurar la base de datos
 
 - Crear una base de datos SQL Server utilizando el script proporcionado en el archivo schema.sql.
+- 
 - Actualizar la cadena de conexión en el archivo appsettings.json si es con usuario y contraseña:
+- 
   "ConnectionStrings": {
     "conexionmaestra": "Server=<tu_servidor>;Database=Ruleta;User Id=<tu_usuario>;Password=<tu_contraseña>;" 
   }
 - Actualizar la cadena de conexión en el archivo appsettings.json sin usuario y contraseña:
+  
   "ConnectionStrings": {
   "conexionmaestra": "Server=<tu_servidor>;Database=Ruleta;Integrated Security=True;TrustServerCertificate=True;"
 },
 
 3. Ejecutar la API: 
   dotnet run por defecto se corre en el puerto 5200 y con el protocolo HTTP
+
   dotnet run --launch-profile https Corre en el protocolo HTTPS puerto 7113
+  
 
 ## Pruebas Manuales
 
