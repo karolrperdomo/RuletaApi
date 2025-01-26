@@ -52,7 +52,8 @@ cd RuletaApi
   "conexionmaestra": "Server=<tu_servidor>;Database=Ruleta;Integrated Security=True;TrustServerCertificate=True;"
 },
 
-3. Ejecutar la API: 
+3. Ejecutar la API:
+   
   dotnet run por defecto se corre en el puerto 5200 y con el protocolo HTTP
 
   dotnet run --launch-profile https Corre en el protocolo HTTPS puerto 7113
