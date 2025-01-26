@@ -1,0 +1,19 @@
+# Ignorar archivos generados por Visual Studio
+.vs/
+.vscode/
+.idea/
+
+# Ignorar carpetas bin y obj (generadas durante la compilación)
+bin/
+obj/
+
+# Archivos específicos de sistema operativo
+.DS_Store #Archivo generado por macOS para almacenar atributos personalizados de directorios.
+Thumbs.db #Archivo generado por Windows para almacenar miniaturas de imágenes.
+
+# Archivos de configuración de .NET Core y Visual Studio
+project.lock.json #Archivos relacionados con la configuración de dependencias en proyectos .NET.
+project.fragment.lock.json #Archivos relacionados con la configuración de dependencias en proyectos .NET.
+*.user
+*.userosscache
+*.suo #Archivos de configuración de usuario de Visual Studio que no deben ser compartidos.

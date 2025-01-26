@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RuletaApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80c6c41fc99ee2edc6073a14234438e8b96edad1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RuletaApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RuletaApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
