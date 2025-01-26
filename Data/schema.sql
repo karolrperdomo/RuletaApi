@@ -29,9 +29,9 @@ CREATE TABLE Resultados (
 );
 
 CREATE TABLE Usuarios (
-    Id INT PRIMARY KEY IDENTITY(1,1), -- Identificador único del usuario
-    Nombre NVARCHAR(100) NOT NULL,   -- Nombre del usuario (opcional para esta aplicación)
-    Credito DECIMAL(10, 2) NOT NULL  -- Crédito disponible para realizar apuestas
+    Id INT PRIMARY KEY IDENTITY(1,1), 
+    Nombre NVARCHAR(100) NOT NULL,   
+    Credito DECIMAL(10, 2) NOT NULL  
 );
 
 
