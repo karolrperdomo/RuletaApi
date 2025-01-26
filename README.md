@@ -31,10 +31,14 @@ cd RuletaApi
 2. Configurar la base de datos
 
 - Crear una base de datos SQL Server utilizando el script proporcionado en el archivo schema.sql.
-- Actualizar la cadena de conexión en el archivo appsettings.json:
+- Actualizar la cadena de conexión en el archivo appsettings.json si es con usuario y contraseña:
   "ConnectionStrings": {
-    "RuletaDb": "Server=<tu_servidor>;Database=Ruleta;User Id=<tu_usuario>;Password=<tu_contraseña>;"
+    "conexionmaestra": "Server=<tu_servidor>;Database=Ruleta;User Id=<tu_usuario>;Password=<tu_contraseña>;" 
   }
+- Actualizar la cadena de conexión en el archivo appsettings.json sin usuario y contraseña:
+  "ConnectionStrings": {
+  "conexionmaestra": "Server=<tu_servidor>;Database=Ruleta;Integrated Security=True;TrustServerCertificate=True;"
+},
 
 3. Ejecutar la API: 
   dotnet run por defecto se corre en el puerto 5200 y con el protocolo HTTP
