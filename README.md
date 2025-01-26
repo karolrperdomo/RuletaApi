@@ -3,6 +3,7 @@ El sistema gestiona ruletas con endpoints para crear nuevas ruletas, abrirlas pa
 
 ## Tecnologías usadas
 Lenguaje: C#
+
 Framework: ASP.NET Core
 Base de Datos: SQL Server
 Sin uso de migraciones (consultas SQL directas)
