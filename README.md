@@ -40,9 +40,9 @@ cd RuletaApi
 2. Configurar la base de datos
 
 - Crear una base de datos SQL Server utilizando el script proporcionado en el archivo schema.sql.
-- 
+  
 - Actualizar la cadena de conexión en el archivo appsettings.json si es con usuario y contraseña:
-- 
+  
   "ConnectionStrings": {
     "conexionmaestra": "Server=<tu_servidor>;Database=Ruleta;User Id=<tu_usuario>;Password=<tu_contraseña>;" 
   }
